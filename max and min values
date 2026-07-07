@@ -1,0 +1,9 @@
+# Find Maximum and Minimum among 3 numbers
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+maximum = max(a, b, c)
+minimum = min(a, b, c)
+print("Maximum number =", maximum)
+print("Minimum number =", minimum)

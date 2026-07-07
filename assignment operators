@@ -1,0 +1,16 @@
+Amount = 10
+print("Initial value of Amount =", Amount)
+Amount += 5
+print("After Amount += 5 :", Amount)
+Amount -= 3
+print("After Amount -= 3 :", Amount)
+Amount *= 2
+print("After Amount *= 2 :", Amount)
+Amount /= 4
+print("After Amount /= 4 :", Amount)
+Amount //= 2
+print("After Amount //= 2 :", Amount)
+Amount %= 3
+print("After Amount %= 3 :", Amount)
+Amount **= 2
+print("After Amount **= 2 :", Amount)

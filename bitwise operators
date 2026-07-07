@@ -1,0 +1,9 @@
+a= int(input("Enter value for a: "))
+b= int(input("Enter value for b: "))
+
+# Bitwise AND
+print("a & b =", a & b)
+
+# Bitwise OR
+print("a | b =", a | b)
+
