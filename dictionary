@@ -1,0 +1,15 @@
+#student_record = { "name" : "Karthika", "marks" : 90 }
+#student_record ["marks"] = 95
+#student_record ["grade"] = "A"
+#print("Student Record:", student_record)
+
+employee_record = { "name" : "Karthika", "department" : "IT", "salary" : 50000 }
+print("Employee Record:", employee_record)
+employee_record = { "name" : "Karthika", "department" : "IT", "salary" : 50000 }
+print("After adding city:")
+employee_record ["city"] = "Hyderabad"
+print("Employee Record ", employee_record)
+employee_record = { "name" : "Karthika", "department" : "IT", "salary" : 50000, "city" : "Hyderabad" }
+employee_record ["salary"] = 55000
+print("After Salary Update:")
+print("Employee Record ", employee_record)

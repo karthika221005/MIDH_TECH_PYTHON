@@ -1,0 +1,43 @@
+# Create a list
+fruits = ["Apple", "Banana", "Mango"]
+
+print("Original List:", fruits)
+
+# Append
+fruits.append("Orange")
+print("After Append:", fruits)
+
+# Extend
+fruits.extend(["Grapes", "Pineapple"])
+print("After Extend:", fruits)
+
+# Insert
+fruits.insert(2, "Cherry")
+print("After Insert:", fruits)
+
+# Remove
+fruits.remove("Banana")
+print("After Remove:", fruits)
+
+# Pop
+fruits.pop()
+print("After Pop:", fruits)
+
+# Index
+print("Index of Mango:", fruits.index("Mango"))
+
+# Sort
+fruits.sort()
+print("After Sort:", fruits)
+
+# Reverse
+fruits.reverse()
+print("After Reverse:", fruits)
+
+# Copy
+new_list = fruits.copy()
+print("Copied List:", new_list)
+
+# Clear
+fruits.clear()
+print("After Clear:", fruits)

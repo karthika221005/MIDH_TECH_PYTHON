@@ -1,0 +1,51 @@
+# Create a string
+text = "  Python Programming  "
+
+# Original String
+print("Original String:", text)
+
+# Concatenate
+print("Concatenate:", text + " Language")
+
+# Repetition
+print("Repetition:", text * 2)
+
+# Indexing
+print("First Character:", text[2])
+
+# Slicing
+print("Slice:", text[2:8])
+
+# Length
+print("Length:", len(text))
+
+# Membership
+print("'Python' in text:", "Python" in text)
+print("'Java' in text:", "Java" in text)
+
+# Uppercase
+print("Upper:", text.upper())
+
+# Lowercase
+print("Lower:", text.lower())
+
+# Strip (Removes leading and trailing spaces)
+print("Strip:", text.strip())
+
+# Replace
+print("Replace:", text.replace("Python", "Java"))
+
+# Split
+print("Split:", text.split())
+
+# Find
+print("Find 'Pro':", text.find("Pro"))
+
+# Count
+print("Count of 'm':", text.count("m"))
+
+# Startswith
+print("Startswith Python:", text.strip().startswith("Python"))
+
+# Endswith
+print("Endswith ing:", text.strip().endswith("ing"))

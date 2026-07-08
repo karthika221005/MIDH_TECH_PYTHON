@@ -1,0 +1,19 @@
+#def function_name(parameter1, parameter2):
+    # Function body
+#function_name(argument1, argument2)
+
+
+#Parameters → Variables in the function definition.
+#Arguments → Values passed to the function.
+
+#def add(a, b):
+ #   print(a + b)
+
+#Add(10, 20)
+
+a = int(input("Enter a number: "))
+b = int(input("Enter another number: "))
+def add(a,b):
+    result = a + b
+    return result
+print(add(a,b))
