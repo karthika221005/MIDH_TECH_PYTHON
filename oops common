@@ -1,0 +1,147 @@
+##ABSTRACTION 
+class Student:
+    def __init__(self, name, age, marks, status):
+
+        # Public variable
+        self.name = name
+
+        # Protected variable
+        self._age = age
+
+        # Private variable
+        self.__marks = marks
+
+        # Public variable
+        self.status = status
+
+
+    # Display method
+    def display(self):
+        print("Name   :", self.name)
+        print("Age    :", self._age)
+        print("Marks  :", self.__marks)
+        print("Status :", self.status)
+
+
+# Creating object
+student = Student("Ravi", 20, 75, "Pass")
+
+# Display
+student.display()
+
+
+
+
+
+#POLYMORPHISM
+# Parent Class
+class Person:
+    def display(self):
+        print("Person Details")
+
+
+# Child Class
+class Student(Person):
+    def __init__(self, name, age, marks, status):
+        self.name = name
+        self.age = age
+        self.marks = marks
+        self.status = status
+
+    # Method Overriding
+    def display(self):
+        print("Name   :", self.name)
+        print("Age    :", self.age)
+        print("Marks  :", self.marks)
+        print("Status :", self.status)
+
+
+# Object Creation
+student = Student("Ravi", 20, 75, "Pass")
+
+# Calling the overridden method
+student.display()
+
+
+
+
+
+#ENCAPSULATION
+class Student:
+    def __init__(self, name, age, marks, status):
+
+        # Public variable
+        self.name = name
+
+        # Protected variable
+        self._age = age
+
+        # Private variable
+        self.__marks = marks
+
+        # Public variable
+        self.status = status
+
+    # Getter method
+    def getMarks(self):
+        return self.__marks
+
+    # Setter method
+    def setMarks(self, marks):
+        self.__marks = marks
+
+    # Display method
+    def display(self):
+        print("Name   :", self.name)
+        print("Age    :", self._age)
+        print("Marks  :", self.getMarks())
+        print("Status :", self.status)
+
+
+# Creating object
+student = Student("Ravi", 20, 75, "Pass")
+
+# Display
+student.display()
+
+
+
+
+
+
+
+#INHERITANCE
+# Parent Class
+class Person:
+    def __init__(self, name, age):
+        self.name = name      # Public
+        self._age = age       # Protected
+
+
+# Child Class
+class Student(Person):
+    def __init__(self, name, age, marks, status):
+
+        # Calling Parent Class Constructor
+        super().__init__(name, age)
+
+        self.__marks = marks   # Private
+        self.status = status   # Public
+
+    # Getter Method
+    def getMarks(self):
+        return self.__marks
+
+    # Display Method
+    def display(self):
+        print("Name   :", self.name)
+        print("Age    :", self._age)
+        print("Marks  :", self.getMarks())
+        print("Status :", self.status)
+
+
+# Creating Object
+student = Student("Ravi", 20, 75, "Pass")
+
+# Display
+student.display()

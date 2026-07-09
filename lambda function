@@ -1,0 +1,5 @@
+double=lambda x:x *2
+print("Basic example:",double(5))
+#map()
+numbers=[1,2,3]
+print("Basic example:",list(map(lambda x:x*2,numbers)))
